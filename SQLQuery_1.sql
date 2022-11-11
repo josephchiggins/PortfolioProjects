@@ -4,7 +4,7 @@
  
 --Not all facility-posted shifts are eventually requested or completed by a clinician.  A manager wants to know the distribution of pay rates for completed CNA shifts in 2022 for the five metropolitan areas that, in the last six months, posted the greatest number of total nursing shifts in the app.
 --1.	Given the below entity-relational diagram, write a SQL query to pull the data from the database.
---![image](https://user-images.githubusercontent.com/116229006/201279251-de02fb93-dc11-4a58-806c-04e6940d0666.png)
+![image](https://user-images.githubusercontent.com/116229006/201279251-de02fb93-dc11-4a58-806c-04e6940d0666.png)
 
 
 SELECT dayname(job_posted) AS shifts_day,
