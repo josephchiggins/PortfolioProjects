@@ -1,7 +1,8 @@
 /*
 Covid 19 Data Exploration 
 
-Skills used: Joins, CTE's, Temp Tables, Windows Functions, Aggregate Functions, Creating Views, Converting Data Types
+Skilled used in this portfolion:
+Joins, CTE's, Temp Tables, Windows Functions, Aggregates, Views,  Data Types conversion
 
 */
 
