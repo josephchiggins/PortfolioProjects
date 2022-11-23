@@ -1,7 +1,7 @@
 /*
 Covid 19 Data Exploration 
 
-Skilled used in this portfolion:
+Skill used in this portfolion:
 Joins, CTE's, Temp Tables, Windows Functions, Aggregates, Views,  Data Types conversion
 
 */
