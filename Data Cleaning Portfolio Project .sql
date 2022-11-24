@@ -1,8 +1,5 @@
-/*
+--Cleaning Data in SQL Queries
 
-Cleaning Data in SQL Queries
-
-*/
 
 
 Select *
@@ -56,9 +53,6 @@ JOIN PortfolioProject.dbo.NashvilleHousing b
 	AND a.[UniqueID ] <> b.[UniqueID ]
 Where a.PropertyAddress is null
 
-
-
-
 --------------------------------------------------------------------------------------------------------------------------
 
 -- Breaking out Address into Individual Columns (Address, City, State)
@@ -94,8 +88,6 @@ SET PropertySplitCity = SUBSTRING(PropertyAddress, CHARINDEX(',', PropertyAddres
 
 Select *
 From PortfolioProject.dbo.NashvilleHousing
-
-
 
 
 
@@ -216,48 +208,7 @@ From PortfolioProject.dbo.NashvilleHousing
 
 
 ALTER TABLE PortfolioProject.dbo.NashvilleHousing
-DROP COLUMN OwnerAddress, TaxDistrict, PropertyAddress, SaleDate
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
------------------------------------------------------------------------------------------------
------------------------------------------------------------------------------------------------
-
----- Using BULK INSERT
-
---USE PortfolioProject;
---GO
---BULK INSERT nashvilleHousing FROM 'C:\Temp\SQL Server Management Studio\Nashville Housing Data for Data Cleaning Project.csv'
---   WITH (
---      FIELDTERMINATOR = ',',
---      ROWTERMINATOR = '\n'
---);
---GO
-
-
----- Using OPENROWSET
---USE PortfolioProject;
---GO
---SELECT * INTO nashvilleHousing
---FROM OPENROWSET('Microsoft.ACE.OLEDB.12.0',
---    'Excel 12.0; Database=C:\Users\josephh\OneDrive\Documents\SQL Server Management Studio\Nashville Housing Data for Data Cleaning Project.csv', [Sheet1$]);
---GO
-
-
-
-
+DROP COLUMN OwnerAddress, TaxDistrict, PropertyAddress, SaleDat
 
 
 
